@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>NaHora - Transforme sua Alimentação com o Melhor Delivery</title>
+    <meta name="description" content="Junte-se ao NaHora: o delivery que une saúde, economia e praticidade. Cadastre-se agora e dê o primeiro passo para uma vida melhor!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="NaHora - Transforme sua Alimentação com o Melhor Delivery">
+    <meta property="og:description" content="Taxas menores, foco em saúde e bem-estar. Cadastre-se agora e faça parte da revolução!">
+    <meta property="og:image" content="image.jpg">
+    <meta property="og:url" content="https://www.nahora.com">
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D3B66', // Azul escuro para profissionalismo
+                        secondary: '#FAF0CA', // Amarelo claro para energia e otimismo
+                        accent: '#F4D35E', // Amarelo para destacar CTAs
+                        neutral: '#F0F0F0', // Cinza claro para fundos
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Custom Styles -->
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0D3B66;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased font-sans">
+    <!-- Mobile-first design starts here -->
+    <header class="bg-primary fixed w-full top-0 z-50 transition-all duration-500 ease-in-out" id="site-header">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-secondary text-2xl font-bold flex items-center">
+                <img src="/NaHoraWhite.svg" alt="" class="h-8 w-20 object-cover">
+            </a>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#beneficios" class="text-secondary hover:text-accent transition duration-300">Benefícios</a>
+                <a href="#sobre" class="text-secondary hover:text-accent transition duration-300">Sobre Nós</a>
+                <a href="#contato" class="text-secondary hover:text-accent transition duration-300">Contato</a>
+                <a href="#cadastro" class="bg-accent text-primary font-semibold py-2 px-4 rounded-full hover:bg-yellow-500 transition duration-300">Cadastrar</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="text-secondary md:hidden focus:outline-none" id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Navigation -->
+        <div class="md:hidden" id="mobile-menu">
+            <nav class="bg-primary px-4 pt-2 pb-4 flex flex-col space-y-2">
+                <a href="#beneficios" class="text-secondary hover:text-accent transition duration-300">Benefícios</a>
+                <a href="#sobre" class="text-secondary hover:text-accent transition duration-300">Sobre Nós</a>
+                <a href="#contato" class="text-secondary hover:text-accent transition duration-300">Contato</a>
+                <a href="#cadastro" class="bg-accent text-primary font-semibold py-2 px-4 rounded-full text-center hover:bg-yellow-500 transition duration-300">Cadastrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center relative" style="background-image: url('https://d3puhl2t51lebl.cloudfront.net/uploads/2024/07/food-delivery-app-banner.png');">
+        <div class="absolute inset-0 bg-gray-800 opacity-80"></div>
+        <div class="max-w-6xl mx-auto px-4 py-24 text-center text-white relative z-10" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl font-extrabold">Sua Saúde em Primeiro Lugar com o NaHora</h1>
+            <p class="mt-4 font-bold opacity-95 text-lg md:text-xl">Economize, coma bem e transforme sua rotina com o delivery que cuida de você.</p>
+            <a href="#cadastro" class="mt-8 inline-block border-2 border-black bg-gradient-to-r from-yellow-200 to-yellow-300 hover:bg-yellow-500 text-primary font-bold py-3 px-20 rounded-3xl transition duration-300">Quero Participar</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-16 bg-neutral">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary" data-aos="fade-up">Descubra os Benefícios Exclusivos do NaHora</h2>
+            <p class="mt-4 text-center text-gray-600 text-lg" data-aos="fade-up" data-aos-delay="100">Oferecemos mais do que um delivery, proporcionamos uma experiência única que une saúde e economia.</p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex justify-center">
+                        <img src="/moneypng.png" alt="Taxas Baixas" class="h-20">
+                    </div>
+                    <h3 class="mt-4 text-2xl font-semibold text-primary">Economia Garantida</h3>
+                    <p class="mt-2 text-gray-600">Desfrute das menores taxas do mercado e aproveite mais por menos.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex justify-center">
+                        <img src="/Pizza-4k.png" alt="Foco na Saúde" class="h-20">
+                    </div>
+                    <h3 class="mt-4 text-2xl font-semibold text-primary">Alimentação Saudável</h3>
+                    <p class="mt-2 text-gray-600">Opções selecionadas para promover seu bem-estar e vitalidade.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex justify-center">
+                        <img src="/Motoboy.png" alt="Ajuda na Dieta" class="h-20">
+                    </div>
+                    <h3 class="mt-4 text-2xl font-semibold text-primary">Suporte Personalizado</h3>
+                    <p class="mt-2 text-gray-600">Ferramentas que auxiliam você a manter sua dieta e alcançar suas metas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="cadastro" class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary" data-aos="fade-up">Junte-se à Revolução do Delivery Saudável</h2>
+            <p class="mt-4 text-center text-gray-600 text-lg" data-aos="fade-up" data-aos-delay="100">Cadastre-se agora e seja um dos primeiros a experimentar o NaHora.</p>
+            <form id="registrationForm" class="mt-8 max-w-lg mx-auto bg-neutral p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold">Nome Completo</label>
+                    <input type="text" name="nome" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-primary" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold">E-mail</label>
+                    <input type="email" name="email" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-primary" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold">Número de Telefone</label>
+                    <input type="tel" name="telefone" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-primary" required>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" name="aceite" class="h-4 w-4 text-primary" required>
+                    <label class="ml-2 text-gray-700 text-sm">Aceito os <a href="#" class="text-primary underline">Termos de Uso</a> e a <a href="#" class="text-primary underline">Política de Privacidade</a>.</label>
+                </div>
+                <button type="submit" class="mt-6 w-full bg-accent hover:bg-yellow-500 text-primary font-semibold py-3 rounded-full transition duration-300">Cadastrar Agora</button>
+                <p id="successMessage" class="mt-4 text-green-600 text-center hidden">Cadastro realizado com sucesso! Em breve entraremos em contato.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-neutral">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary" data-aos="fade-up">Depoimentos de Quem Confia no NaHora</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-gray-700 italic">"O NaHora é exatamente o que eu precisava! Um delivery que cuida da minha saúde e do meu bolso."</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="relative">
+                            <img src="/direction_14871509.png" alt="Usuária 1" class="h-12 w-12 rounded-full">
+                            <img src="/Circle-effect.png" alt="Imagem Sobreposta" class="h-12 w-12 rounded-full absolute top-0 left-0 object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-gray-900 font-semibold">Ana Santos</p>
+                            <p class="text-gray-600 text-sm">Empreendedora</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-gray-700 italic">"O NaHora é exatamente o que eu precisava! Um delivery que cuida da minha saúde e do meu bolso."</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="relative">
+                            <img src="/direction_14871509.png" alt="Usuária 1" class="h-12 w-12 rounded-full">
+                            <img src="/Circle-effect.png" alt="Imagem Sobreposta" class="h-12 w-12 rounded-full absolute top-0 left-0">
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-gray-900 font-semibold">Ana Santos</p>
+                            <p class="text-gray-600 text-sm">Empreendedora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary" data-aos="fade-up">Perguntas Frequentes</h2>
+            <div class="mt-8" data-aos="fade-up" data-aos-delay="100">
+                <div class="space-y-4">
+                    <div class="bg-neutral p-4 rounded-lg shadow">
+                        <button class="w-full text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                            <span class="font-semibold text-gray-800">Quando o NaHora estará disponível?</span>
+                            <svg class="h-6 w-6 text-primary transform rotate-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2 text-gray-600 hidden">
+                            Estamos nos preparativos finais e em breve anunciaremos a data oficial. Cadastre-se para receber atualizações em primeira mão!
+                        </div>
+                    </div>
+                    <div class="bg-neutral p-4 rounded-lg shadow">
+                        <button class="w-full text-left flex items-center justify-between" onclick="toggleFAQ(this)">
+                            <span class="font-semibold text-gray-800">Como posso me beneficiar das taxas menores?</span>
+                            <svg class="h-6 w-6 text-primary transform rotate-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2 text-gray-600 hidden">
+                            Nossas parcerias estratégicas e tecnologia avançada nos permitem oferecer preços mais baixos sem comprometer a qualidade.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="sobre" class="py-16 bg-neutral">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary" data-aos="fade-up">Sobre o NaHora</h2>
+            <p class="mt-6 text-center text-gray-700 text-lg" data-aos="fade-up" data-aos-delay="100">
+                Somos uma equipe dedicada a revolucionar o mercado de delivery, colocando sua saúde e satisfação em primeiro lugar. Nossa missão é proporcionar uma experiência única que une praticidade, economia e bem-estar.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="bg-primary py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary" data-aos="fade-up">Entre em Contato Conosco</h2>
+            <p class="mt-4 text-center text-secondary text-lg" data-aos="fade-up" data-aos-delay="100">Estamos prontos para responder suas dúvidas e ouvir suas sugestões.</p>
+            <div class="mt-8 flex flex-col md:flex-row justify-center items-center text-secondary" data-aos="fade-up" data-aos-delay="200">
+                <a href="mailto:contato@nahora.com" class="mx-4 hover:text-accent transition duration-300">nahora.srs@gmail.com</a>
+                <span class="hidden md:block">|</span>
+                <a href="tel:+5511999999999" class="mx-4 hover:text-accent transition duration-300">+55 35 99766-8350</a>
+            </div>
+            <div class="mt-6 flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#" class="hover:text-accent transition duration-300"><img src="/direction_14871509.png alt="Facebook" class="h-6"></a>
+                <a href="#" class="hover:text-accent transition duration-300"><img src="/instagram_2111463.png" alt="Instagram" class="h-6"></a>
+                <a href="#" class="hover:text-accent transition duration-300"><img src="/linkedin_3992606.png" alt="Twitter" class="h-6"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral py-3">
+        <div class="max-w-6xl mx-auto px-4 text-center text-gray-600">
+            &copy; 2023 NaHora. All rights.
+            <div class="mt-2">
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            duration: 1000,
+        });
+
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submission
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Lógica para enviar os dados para o servidor
+            document.getElementById('successMessage').classList.remove('hidden');
+            this.reset();
+        });
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('svg');
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
